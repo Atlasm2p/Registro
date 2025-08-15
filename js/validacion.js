@@ -40,6 +40,11 @@ function verificarContraValida() {
 const boton_registro = document.getElementById("regBtn")
 
 boton_registro.addEventListener("click", () => {
+    Sconst checkbox = document.getElementById("terminos");
+    if (!checkbox.checked) {
+        event.preventDefault(); // Prevent form submission
+        showAlertError();
+        console.log("Checkbox is not checked");
     if (verificarCamposVacios() && verificarContraValida()){
         console.log(verificarCamposVacios());
         console.log(verificarContraValida());
@@ -50,4 +55,3 @@ boton_registro.addEventListener("click", () => {
         console.log(verificarContraValida());
         showAlertError();
     }
-});
