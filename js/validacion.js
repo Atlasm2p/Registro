@@ -10,7 +10,6 @@ function showAlertError() {
     setTimeout(function() {
         document.getElementById("alert-danger").classList.remove("show");
     }, 3000); // Hide after 3 seconds
-    
 }
     
 
