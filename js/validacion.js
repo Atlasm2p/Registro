@@ -21,3 +21,5 @@ document.getElementById("regBtn").addEventListener("click", function(event){
         console.log("Checkbox is not checked");
     }
 });
+//this is a comment to attempt to submit with terminal
+
